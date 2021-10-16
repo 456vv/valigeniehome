@@ -94,7 +94,7 @@ type RequestPayload struct{
 	AccessToken			string								`json:"accessToken"`	//1,token
 	
 	DeviceId			string								`json:"deviceId"`		//1,设备id
-	DeviceType			string								`json:"deviceType"`		//1,设备类型,http://doc-bot.tmall.com/docs/doc.htm?spm=0.0.0.0.yEvk7c&treeId=393&articleId=108271&docType=1	Attribute				
+	DeviceType			string								`json:"deviceType"`		//1,设备类型,http://doc-bot.tmall.com/docs/doc.htm?spm=0.0.0.0.yEvk7c&treeId=393&articleId=108271&docType=1
 	Attribute			string								`json:"attribute"`		//1,属性，http://doc-bot.tmall.com/docs/doc.htm?spm=0.0.0.0.wzijJu&treeId=393&articleId=108268&docType=1
 	
 	//最值	说明
