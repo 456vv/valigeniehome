@@ -141,7 +141,7 @@ func (T *Response) Error(errStr, code string) {
 	//INVALIDATE_CONTROL_ORDER		 417 控制指令不正确		invalidate control order
 	//SERVICE_ERROR					 500 服务异常			服务错误原因（方便观察原因）
 	//DEVICE_NOT_SUPPORT_FUNCTION	 501 设备不支持该操作	device not support
-	//IOT_DEVICE_OFFLINE			 502 设备离线状态		device is offline
+	//IOT_DEVICE_OFFLINE			 504 设备离线状态		device is offline
 	var err string
 	switch code {
 	case "400":
