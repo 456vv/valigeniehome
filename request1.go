@@ -1,6 +1,4 @@
 package valigeniehome
-	
-
 
 //{
 //	"header": {
@@ -30,7 +28,7 @@ package valigeniehome
 //	}
 //}
 
-type Header struct{
+type Header1 struct{
 	MessageId			string	`json:"messageId"`		//1,用于跟踪请求，是不重复的消息id
 	
 	//设备发现类（与AliGenie.Iot.Device.Discovery对应）
@@ -90,12 +88,12 @@ type Header struct{
 	Namespace			string	`json:"namespace"`		//1,消息命名空间
 	PayLoadVersion		int		`json:"payLoadVersion"`	//1,payload 的版本,目前版本为 1
 }
-type RequestPayload struct{
+
+type RequestPayload1 struct{
 	AccessToken			string								`json:"accessToken"`	//1,token
 	
 	DeviceId			string								`json:"deviceId"`		//1,设备id
-	DeviceType			string								`json:"deviceType"`		//1,设备类型,http://doc-bot.tmall.com/docs/doc.htm?spm=0.0.0.0.yEvk7c&treeId=393&articleId=108271&docType=1	Attribute			string								`json:"attribute"`		//1,属性
-	
+	DeviceType			string								`json:"deviceType"`		//1,设备类型,http://doc-bot.tmall.com/docs/doc.htm?spm=0.0.0.0.yEvk7c&treeId=393&articleId=108271&docType=1
 	Attribute			string								`json:"attribute"`		//1,属性，http://doc-bot.tmall.com/docs/doc.htm?spm=0.0.0.0.wzijJu&treeId=393&articleId=108268&docType=1
 	
 	//最值	说明
@@ -104,15 +102,8 @@ type RequestPayload struct{
 	Value				string								`json:"value"`			//1,值，开关的值
 	Extensions			map[string]string					`json:"extensions"`		//0,扩展，产品扩展属性,为空返回null或者不返回该字段
 }
-type Request struct{
-	Header		Header				`json:"header"`
-	Payload		RequestPayload		`json:"payload"`
+
+type Request1 struct{
+	Header		Header1				`json:"header"`
+	Payload		RequestPayload1		`json:"payload"`
 }
-
-
-
-
-
-
-
-
